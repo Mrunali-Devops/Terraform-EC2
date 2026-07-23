@@ -39,7 +39,7 @@ resource "aws_instance" "myinsta" {
   ami           = "ami-0f8a61b66d1accaee"
   instance_type = "t3.micro"
   # Uncomment and set this to an existing key pair name in your AWS account if you need SSH access.
-  key_name      = "Newkey-key-pair"
+  key_name      = "Newkey"
   subnet_id     = "subnet-06c88807658f0790d"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
